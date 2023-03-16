@@ -1,0 +1,334 @@
+    1  sudo apt update
+    2  nano /etc/apt/sources.list
+    3  clear
+    4  sudo apt update
+    5  clear
+    6  sudo sed 's/^http/https/g' /etc/apt/sources.list
+    7  clear
+    8  sudo sed 's/http/https/g' /etc/apt/sources.list
+    9  clear
+   10  sudo sed -i 's/http/https/g' /etc/apt/sources.list
+   11  sudo apt-update
+   12  sudo apt update
+   13  clear
+   14  sudo apt upgrade
+   15  cd Bureau/
+   16  mkdir stan.exe elis.ini marvin.dll
+   17  touch mick.txt neron.rs4 merle.ini
+   18  ls
+   19  mkdir dwwm_2023
+   20  clear
+   21  mv *.* dwwm_2023/
+   22  ls
+   23  cd dwwm_2023/
+   24  ls
+   25  rm *.ini
+   26  rm -f *.ini
+   27  rm -r *.ini
+   28  clear
+   29  touch eric stan kyle
+   30  touch bobo{01..100}.{ini,txt,exe,msi}
+   31  ls
+   32  clear
+   33  rm *{050..100}.exe
+   34  ls *.exe
+   35  rm bobo{001..099}.ini
+   36  ls $.ini
+   37  ls *.ini
+   38  clear
+   39  ls
+   40  clear
+   41  rm !(*.txt)
+   42  ls
+   43  clear
+   44  cp bobo100.txt ~/Bureau/
+   45  cd /
+   46  systemctl
+   47  top
+   48  clear
+   49  top
+   50  clear
+   51  pgrep "firefox"
+   52  kill 38920
+   53  pgrep "firefox"
+   54  clear
+   55  pkill firefox
+   56  find / -type f -name "bo*"
+   57  find / -type f -name "bo*.txt"
+   58  sudo find / -type f -name "bo*.txt"
+   59  clear
+   60  sudo find / -type f -name "bo*.txt"
+   61  sudo find / -type d -name "bo*"
+   62  clear
+   63  sudo find / -type d -name "*bo"
+   64  sudo find / -type d -name "*bo*"
+   65  clear
+   66  getent passwd
+   67  clear
+   68  getent group
+   69  less /etc/shadow
+   70  sudo !
+   71  less /etc/shadow
+   72  !
+   73  clear
+   74  sudo less /etc/shadow
+   75  head /etc/passwd
+   76  tail /etc/passwd
+   77  clear
+   78  grep "sudo" /etc/passwd
+   79  grep -i "sudo" /etc/passwd
+   80  grep -io "sudo" /etc/passwd
+   81  getent passwd
+   82  clear
+   83  grep -io "sudo" /etc/group
+   84  grep  "sudo" /etc/group
+   85  grep  "root" /etc/group
+   86  grep -c "root" /etc/group
+   87  cd ~
+   88  mkdir classe
+   89  cd classe
+   90  echo "Bonjour"
+   91  clear
+   92  echo "Bonjour
+   93  les amis;"
+   94  clear
+   95  echo "Bonjour
+   96  les amis."
+   97  hostname
+   98  pwd
+   99  "Bonjour $(whoami),
+  100  Vous etes sur la machine $(hostname)
+  101  Dans le dossier $(pwd)"
+  102  "Bonjour $(whoami),
+  103  Vous etes sur la machine $(hostname)
+  104  Dans le dossier $(pwd)
+  105  clear
+  106  date +"%F"
+  107  date
+  108  "Bonjour $(whoami),
+  109  Vous etes sur la machine $(hostname)
+  110  Dans le dossier $(pwd)
+  111  nous somme le $(date +"%F")"
+  112  "Bonjour $(whoami),
+  113  Vous etes sur la machine $(hostname)
+  114  Dans le dossier $(pwd)
+  115  nous somme le $(date +%F)"
+  116  clear
+  117  echo "Hello"
+  118  echo "Hello" > message.txt
+  119  cat message.txt 
+  120  echo " Au revoir" >> message.txt
+  121  cat message.txt 
+  122  nano liste.csv
+  123  clear
+  124  awk -F"," 'NR>1 {print}' liste.csv | wc -l 
+  125  awk -F"," 'NR>1 {print}' liste.csv
+  126  awk -F"," 'NR>1 {print}' liste.csv | wc -l
+  127  awk -F"," 'NR>1 {print $1}' liste.csv
+  128  clear
+  129  awk -F"," 'NR>1 {print $2}' liste.csv
+  130  awk -F"," 'NR>1 {print $3}' liste.csv
+  131  grep -i "william" liste.csv 
+  132  grep "^S" liste.csv 
+  133  grep -i "lyon" liste.csv 
+  134  grep -w "25" liste.csv 
+  135  grep -E "1[5-9]|2[0-9]|3[0]" liste.csv 
+  136  awk -F"," '$2>=15&&$2<=30{print}' liste.csv 
+  137  awk -F"," '$2>=15 && $2<=30{print}' liste.csv 
+  138  clear
+  139  awk -F"," 'BEGIN{cpt=0}{if($2>=15&&$2<=30)cpt++}END{print cpt}' liste.csv 
+  140  cd classe/
+  141  nano liste.csv 
+  142  ls
+  143  awk -F"," '{print $3}' liste.csv 
+  144  awk -F"," 'NR>1{print $3}' liste.csv 
+  145  awk -F"," 'NR>1{print $3}' liste.csv | sort
+  146  awk -F"," 'NR>1{print $3}' liste.csv | sort -u
+  147  awk -F"," 'NR>1{print $3}' liste.csv | sort | uniq
+  148  clear
+  149  awk -F"," 'NR>1{print $3}' liste.csv | sort -u 
+  150  clear
+  151  awk -F"," '{print $2}' liste.csv 
+  152  awk -F"," 'NR>1{print $2}' liste.csv 
+  153  awk -F"," 'BEGIN{cpt=0}NR>1{cpt=cpt+$2}END{print cpt/NR-1}' liste.csv 
+  154  awk -F"," 'BEGIN{cpt=0}NR>1{cpt=cpt+$2}END{print cpt/(NR-1)}' liste.csv 
+  155  cat liste.csv 
+  156  clear
+  157  awk -F, 'NR>1{print $4}' liste.csv 
+  158  awk -F, 'NR>1{print $4}' liste.csv | sort -u
+  159  awk -F, 'NR>1{print $4}' liste.csv | sort -u | wc -l
+  160  clear
+  161  sed '10i Gerard,60,Paris,M' liste.csv 
+  162  clear
+  163  sed -i '10i Gerard,60,Paris,M' liste.csv 
+  164  cat liste.csv 
+  165  clear
+  166  awk -F, 'NR>1{printt $1}' liste.csv 
+  167  ls
+  168  awk -F, 'NR>1{print $1}' liste.csv 
+  169  awk -F, 'NR>1{system('mkdir' $1)}' liste.csv 
+  170  awk -F, 'NR>1{system("mkdir" $1)}' liste.csv 
+  171  awk -F, 'NR>1{system("mkdir " $1)}' liste.csv 
+  172  clear
+  173  awk -F, 'NR>1{system("mkdir "$1)}' liste.csv 
+  174  ls
+  175  clear
+  176  mkdirKalifa
+  177  mkdir Kalifa
+  178  clear
+  179  cat liste.csv 
+  180  clear
+  181  awk '{print $0}' liste.csv 
+  182  clear
+  183  awk '{print $0}' liste.csv | xargs mkdir 
+  184  ls
+  185  clear
+  186  touch matrice.txt
+  187  sudo apt install vim 
+  188  clear
+  189  vim matrice.txt
+  190  head matrice.txt 
+  191  awk '{print}' matrice.txt 
+  192  awk 'NR==1{print}' matrice.txt 
+  193  awk 'NR==1{print $(NR)}' matrice.txt 
+  194  awk 'NR==1{print $(NF)}' matrice.txt 
+  195  awk 'NR==1{accu+=$3} END{print accu}' matrice.txt 
+  196  clear
+  197  awk '{for(i=1;i<=NF;i++) result[i]=result[i]+$i}' matrice.txt 
+  198  awk '{for(i=1;i<=NF;i++) result[i]=result[i]+$i} END{print a}' matrice.txt 
+  199  awk '{for(i=1;i<=NF;i++) result[i]=result[i]+$i} END{print result}' matrice.txt 
+  200  awk '{for(i=1;i<=NF;i++) result[i]+=$i} END{print result}' matrice.txt 
+  201  awk '{for(i=1;i<=NF;i++) result[i]+=$i}' matrice.txt 
+  202  awk '{for(i=1;i<=NF;i++)result[i]+=$i} END{print result}' matrice.txt 
+  203  awk '{for(i=1;i<=NF;i++)result+=$i} END{print result}' matrice.txt 
+  204  awk 'NR==1{for(i=1;i<=NF;i++)result+=$i} END{print result}' matrice.txt 
+  205  clear
+  206  awk 'NR==1{for(i=1;i<=NF;i++)result+=$i}END{print result}' matrice.txt 
+  207  awk 'NR==2{for(i=1;i<=NF;i++)result+=$i}END{print result}' matrice.txt 
+  208  awk 'NR==3{for(i=1;i<=NF;i++)result+=$i}END{print result}' matrice.txt 
+  209  awk 'NR==4{for(i=1;i<=NF;i++)result+=$i}END{print result}' matrice.txt 
+  210  clear
+  211  awk '{a=a+$1} END{print a}' matrice.txt 
+  212  awk '{a=a+$2} END{print a}' matrice.txt 
+  213  awk '{a=a+$3} END{print a}' matrice.txt 
+  214  awk '{a=a+$4} END{print a}' matrice.txt 
+  215  clear
+  216  awk '{a=$(NF+NR)}END{print a}'
+  217  awk '{a=$(NF+NR)}END{print a}' matrice.txt 
+  218  clear
+  219  awk '{a=a+$(NF+NR)}END{print a}' matrice.txt 
+  220  clear
+  221  cat matrice.txt 
+  222  awk '{a=a+$(NR)}END{print a}' matrice.txt 
+  223  clear
+  224  awk '{a=a+$(nF)}END{print a}' matrice.txt 
+  225  awk '{a=a+$(NF)}END{print a}' matrice.txt 
+  226  awk '{a=a+$(NF-NR)}END{print a}' matrice.txt 
+  227  awk '{a=a+$((NF+1)-NR)}END{print a}' matrice.txt 
+  228  awk '{a+=$((NF+1)-NR)}END{print a}' matrice.txt 
+  229  clear
+  230  awk '{sum1+=$1;sum2+=$2;sum3+=$3;sum4+=$4} END{print sum1,sum2,sum3,sum4}' matrice.txt 
+  231  clear
+  232  awk 'NR==1{print $1+$2+$3+$4}' matrice.txt 
+  233  awk 'BEGIN{sum=1}NR==sum{print $1+$2+$3+$4}' matrice.txt 
+  234  awk 'BEGIN{sum=1}NR==sum++{print $1+$2+$3+$4}' matrice.txt 
+  235  awk 'BEGIN{col=1}NR==1{print $(col++)}' matrice.txt 
+  236  awk 'BEGIN{col=1}NR==1{print $(++col)}' matrice.txt 
+  237  clear
+  238  awk '{result+=$0}END{print result}' matrice.txt 
+  239  awk '{result += $0}END{print result}' matrice.txt 
+  240  awk '{result += $2}END{print result}' matrice.txt 
+  241  awk '{result += $3}END{print result}' matrice.txt 
+  242  awk '{result += $4}END{print result}' matrice.txt 
+  243  awk '{result += $4}{print result}' matrice.txt 
+  244  awk '{result += $0}{print result}' matrice.txt 
+  245  clear
+  246  awk '{result += $(NF)}{print result}' matrice.txt 
+  247  clear
+  248  awk '{diag+=$(NR)}END{print diag}' matrice.txt 
+  249  awk '{diag+=$((NF+1)-NR)}END{print diag}' matrice.txt 
+  250  awk '{diag+=$((NF+1)-NR)}END{print $((NF+1)-NR)}' matrice.txt 
+  251  awk '{diag+=$((NF+1)-NR)}{print $((NF+1)-NR)}' matrice.txt 
+  252  awk '{diag+=$((NF+1)-NR)}{print diag}' matrice.txt 
+  253  awk '{diag+=$((NF+1)-NR)}END{print diag}' matrice.txt 
+  254  clear
+  255  wget https://raw.githubusercontent.com/Blakoko/dwwm_2023/main/liste.csv
+  256  ls
+  257  sort -help
+  258  sort --help
+  259  history | sort -r
+  260  clear
+  261  ls
+  262  reverse
+  263  sort -r
+  264  sort --help
+  265  tac history
+  266  history | tac
+  267  history
+  268  ls
+  269  nano liste.csv
+  270  exir
+  271  clear
+  272  ls
+  273  ssh
+  274  cd ~
+  275  ls
+  276  cd Bureau/
+  277  dwwm_2023
+  278  mkdir dwwm_2023
+  279  ls
+  280  cd dwwm_2023/
+  281  ls
+  282  rm -f . *.*
+  283  ls
+  284  rmdir *.*
+  285  ls
+  286  git init
+  287  sudo apt install git
+  288  ls
+  289  clea
+  290  clear
+  291  git init
+  292  ssh-keygen -t rsa -b 4086
+  293  ssh-keygen -t rsa -b 4096
+  294  cd ~/.ssh
+  295  ls
+  296  mv id_rsa* github_cl
+  297  ls
+  298  mv id_rsa git_cle
+  299  mv id_rsa.pub git_cle.pub
+  300  ls
+  301  clip
+  302  cd -
+  303  git remote add origin git@github.com:Blakoko/dwwm_2023.git
+  304  git remote
+  305  cd -
+  306  cat git_cle
+  307  cat git_cle.pub 
+  308  vim config
+  309  cd -
+  310  git fetch --all
+  311  git branch -M main
+  312  git pull origin main
+  313  ls
+  314  cd test/
+  315  ls
+  316  cd ..
+  317  ls
+  318  cd ..
+  319  ls
+  320  mv classe/ Bureau/dwwm_2023/
+  321  ls
+  322  cd Bureau/
+  323  ls
+  324  cd dwwm_2023/
+  325  ls
+  326  git add .
+  327  git commit -m "Nouveau"
+  328  git config --global user.email "kalifa@virtualbox.com"
+  329  git config --global user.name "kalifa@virtualbox"
+  330  git commit -m "Nouveau"
+  331  git push origin main
+  332  clear
+  333  ls
+  334  history > historique_.txt
